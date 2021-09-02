@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #222831;
+    color: #00ADB5;
+    transition: all .5s ease-in-out;
+}
+
+.card {
+    background-color: #393E46;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.body {
+    color: #3a969b;
+    background-color: rgb(227, 253, 253);
+    transition: all 1s ease-in-out;
+}
+
+.cardlight{
+    background-color: rgb(203, 241, 245);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.none {
+    display: none;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: .5;
+}
+
+.btnhover {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgb(238, 238, 238), 2px 2px 20px 2px rgb(0, 173, 181);
+    animation: mymove 1s infinite;
+}
+
+.btnhoverlight {
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px 1px rgb(0, 123, 129), 2px 2px 20px 2px rgb(34, 40, 49);
+    animation: mymove 1s infinite;
+}
+
+.ihover {
+    transition: 1s;
+}
+
+.ihover:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes mymove {
+    45% {
+        transform: scale(1.4);
+    }
+
+    45% {
+        transform: scale(.7);
+    }
+
+}
+
+.icon {
+    font-size: 20px;
+    transition: .5s;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+}
+
+.switcher {
+    position: fixed;
+    top: 0%;
+    right: 1%;
+    border-radius: 50%;
+}

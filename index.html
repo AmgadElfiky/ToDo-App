@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="container mt-5 mb-3">
+        <div class="row">
+            <h1 class="text text-info text-right display-4 col-md-6 animate__animated animate__zoomInLeft">ToDo</h1>
+            <h1 class="text text-info text-left display-4 col-md-6 animate__animated animate__zoomInRight">App</h1>
+        </div>
+    </div>
+
+    <div class="container col-md-6">
+        <div class="card">
+            <div class="card-body text-center">
+                <div class="form-group">
+                    <label class="l1 animate__animated animate__wobble" style="font-size: 30px;"> Task Data</label>
+                    <input id="taskInput" type="text" class="form-control py-4" placeholder="Your Task..." style="background-color: rgb(230, 254, 255);">
+                    <div class="alert alert-danger none mt-2" role="alert" id="invalid">
+                        You Must Enter data at first
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <button id="taskAdd" class="btn btn-light btnhover"><i class="fas fa-plus mt-1 ihover"
+                        style="font-size: 30px; margin: auto;"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-md-6 mt-3 ss">
+        <div class="alert alert-success text-center none" role="alert" id="addSuccess">
+            Task Added Successfully
+            <i class="far fa-laugh-beam" style="font-size: 30px;"></i>
+        </div>
+        <div class="alert alert-danger text-center none" role="alert" id="addDanger">
+            Task Deleted Successfully
+            <i class="far fa-laugh-beam" style="font-size: 30px;"></i>
+        </div>
+        <div class="alert alert-info text-center none" role="alert" id="addInfo">
+            Task Is Done
+            <i class="far fa-laugh-beam" style="font-size: 30px;"></i>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <div id="allTasks"></div>
+                    <div class="alert alert-danger text-center" role="alert" id="noTask">
+                        There Is no Data
+                        <i class="far fa-frown" style="font-size: 30px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-light my-3 switcher" id="switcher"><i class="far fa-sun" id="i1" style="font-size: 20px;"></i></button>
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+</body>
+
+</html>
