@@ -10,6 +10,11 @@ let addInfo = document.getElementById('addInfo');
 let addwarning = document.getElementById('addwarning');
 
 
+window.onload = () => {
+    'use strict';
+    taskInput.focus();
+}
+
 let closeValidtaionMessagefunc = () => {
     invalid.classList.toggle('none');
 }
@@ -19,6 +24,7 @@ let NoTaskToShow = () => {
     } else {
         noTask.classList.remove('none');
     }
+    'use strict';
 }
 
 let addTask = () => {
@@ -39,8 +45,8 @@ let addTask = () => {
         setTimeout(() => {
             addSuccess.classList.add('none');
         }, 1500);
-
     }
+    'use strict';
 }
 
 taskAdd.addEventListener('click', addTask);
