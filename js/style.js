@@ -7,6 +7,7 @@ let closeValidtaionMessage = document.querySelector('#invalid .close');
 let addSuccess = document.getElementById('addSuccess');
 let addDanger = document.getElementById('addDanger');
 let addInfo = document.getElementById('addInfo');
+let addwarning = document.getElementById('addwarning');
 
 
 let closeValidtaionMessagefunc = () => {
@@ -55,11 +56,19 @@ document.addEventListener('click', (e) => {
         }, 1000);
     }
     if (e.target.classList.contains('check')) { //check
-        e.target.parentElement.classList.toggle('done');
-        addInfo.classList.remove('none');
-        setTimeout(() => {
-            addInfo.classList.add('none');
-        }, 1000);
+        if (e.target.parentElement.classList.contains('done')) {
+            e.target.parentElement.classList.remove('done');
+            addwarning.classList.remove('none');
+            setTimeout(() => {
+                addwarning.classList.add('none');
+            }, 1000);
+        } else {
+            e.target.parentElement.classList.add('done');
+            addInfo.classList.remove('none');
+            setTimeout(() => {
+                addInfo.classList.add('none');
+            }, 1000);
+        }
     }
     NoTaskToShow();
 });

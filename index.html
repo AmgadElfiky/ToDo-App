@@ -26,7 +26,8 @@
             <div class="card-body text-center">
                 <div class="form-group">
                     <label class="l1 animate__animated animate__wobble" style="font-size: 30px;"> Task Data</label>
-                    <input id="taskInput" type="text" class="form-control py-4" placeholder="Your Task..." style="background-color: rgb(230, 254, 255);">
+                    <input id="taskInput" type="text" class="form-control py-4" placeholder="Your Task..."
+                        style="background-color: rgb(230, 254, 255);">
                     <div class="alert alert-danger none mt-2" role="alert" id="invalid">
                         You Must Enter data at first
                         <button type="button" class="close" aria-label="Close">
@@ -53,6 +54,11 @@
             Task Is Done
             <i class="far fa-laugh-beam" style="font-size: 30px;"></i>
         </div>
+        <div class="alert alert-warning text-center none" role="alert" id="addwarning">
+            Task Is Unchecked
+            <i class="far fa-meh" style="font-size: 30px;"></i>
+            
+        </div>
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
@@ -66,7 +72,8 @@
         </div>
     </div>
 
-    <button class="btn btn-light my-3 switcher" id="switcher"><i class="far fa-sun" id="i1" style="font-size: 20px;"></i></button>
+    <button class="btn btn-light my-3 switcher" id="switcher"><i class="far fa-sun" id="i1"
+            style="font-size: 20px;"></i></button>
 
     <script src="./js/jquery-3.5.1.slim.min.js"></script>
     <script src="./js/popper.min.js"></script>
